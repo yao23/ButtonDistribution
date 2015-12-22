@@ -121,13 +121,50 @@
                                     <constraint firstItem="AX6-rq-VfR" firstAttribute="centerY" secondItem="uTl-IC-Y53" secondAttribute="centerY" id="yXk-JO-sxh"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o36-8O-69i">
+                                <rect key="frame" x="137" y="58" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="AeU-Qf-hIM"/>
+                                    <constraint firstAttribute="width" constant="46" id="Zqd-tl-qnA"/>
+                                </constraints>
+                                <state key="normal" title="Shop"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lp1-BV-5DM">
+                                <rect key="frame" x="137" y="126" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="0xT-Fk-boj"/>
+                                    <constraint firstAttribute="height" constant="30" id="asm-lq-TJF"/>
+                                </constraints>
+                                <state key="normal" title="Like"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ejn-5O-6Df">
+                                <rect key="frame" x="120" y="197" width="80" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="BnT-uY-xBu"/>
+                                    <constraint firstAttribute="height" constant="30" id="jjp-JZ-edZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Comment"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="uTl-IC-Y53" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="1SY-hx-FMD"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="uTl-IC-Y53" secondAttribute="bottom" id="38j-ol-pyk"/>
+                            <constraint firstItem="Lp1-BV-5DM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Cog-9N-sot"/>
+                            <constraint firstItem="o36-8O-69i" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PBW-5t-6Zj"/>
+                            <constraint firstItem="Lp1-BV-5DM" firstAttribute="top" secondItem="o36-8O-69i" secondAttribute="bottom" constant="38" id="QBX-vF-HKd"/>
                             <constraint firstAttribute="trailing" secondItem="uTl-IC-Y53" secondAttribute="trailing" id="VjV-yO-Kan"/>
+                            <constraint firstItem="ejn-5O-6Df" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Zd6-4d-3Om"/>
+                            <constraint firstItem="Lp1-BV-5DM" firstAttribute="top" secondItem="o36-8O-69i" secondAttribute="bottom" constant="38" id="dvi-2N-cuZ"/>
+                            <constraint firstItem="ejn-5O-6Df" firstAttribute="top" secondItem="Lp1-BV-5DM" secondAttribute="bottom" constant="41" id="irT-P0-tdr"/>
+                            <constraint firstItem="o36-8O-69i" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="38" id="y8J-2j-vM7"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="dvi-2N-cuZ"/>
+                            </mask>
+                        </variation>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="568"/>
