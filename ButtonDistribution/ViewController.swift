@@ -24,6 +24,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        let screenWidth = UIScreen.mainScreen().bounds.size.width;
+        let viewGapWidth = (screenWidth - 160) / 5;
+        firstViewWidthConstraint.constant = viewGapWidth;
+        secondViewWidthConstraint.constant = viewGapWidth;
+        thirdViewWidthConstraint.constant = viewGapWidth;
+        fourthViewWidthConstraint.constant = viewGapWidth;
+        fifthViewWidthConstraint.constant = viewGapWidth;
     }
 
     override func didReceiveMemoryWarning() {
