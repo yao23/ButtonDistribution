@@ -25,13 +25,17 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        let screenWidth = UIScreen.mainScreen().bounds.size.width;
-        let viewGapWidth = (screenWidth - 160) / 5;
-        firstViewWidthConstraint.constant = viewGapWidth;
-        secondViewWidthConstraint.constant = viewGapWidth;
-        thirdViewWidthConstraint.constant = viewGapWidth;
-        fourthViewWidthConstraint.constant = viewGapWidth;
-        fifthViewWidthConstraint.constant = viewGapWidth;
+        let screenWidth = UIScreen.mainScreen().bounds.size.width
+        let viewGapWidth = (screenWidth - 160) / 5
+        firstViewWidthConstraint.constant = viewGapWidth
+        secondViewWidthConstraint.constant = viewGapWidth
+        thirdViewWidthConstraint.constant = viewGapWidth
+        fourthViewWidthConstraint.constant = viewGapWidth
+        fifthViewWidthConstraint.constant = viewGapWidth
+        
+        shopBtn .setTitle("0", forState: UIControlState.Normal)
+        likeBtn.setTitle("0", forState: UIControlState.Normal)
+        commentBtn.setTitle("0", forState: UIControlState.Normal)
     }
 
     override func didReceiveMemoryWarning() {
@@ -41,10 +45,16 @@ class ViewController: UIViewController {
 
 
     @IBAction func shopAction(sender: AnyObject) {
+        let numShop = Int((shopBtn.titleLabel?.text)!)
+        shopBtn.setTitle(String(numShop! + 1), forState: UIControlState.Normal)
     }
     @IBAction func likeAction(sender: AnyObject) {
+        let numLike = Int((likeBtn.titleLabel?.text)!)
+        likeBtn.setTitle(String(numLike! + 1), forState: UIControlState.Normal)
     }
     @IBAction func commentAction(sender: AnyObject) {
+        let numComment = Int((commentBtn.titleLabel?.text)!)
+        commentBtn.setTitle(String(numComment! + 1), forState: UIControlState.Normal)
     }
 }
 

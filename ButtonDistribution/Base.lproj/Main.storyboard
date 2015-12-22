@@ -35,6 +35,7 @@
                                             <constraint firstAttribute="height" constant="40" id="Ini-Pq-VtY"/>
                                             <constraint firstAttribute="width" constant="40" id="tmh-Dk-IG2"/>
                                         </constraints>
+                                        <inset key="titleEdgeInsets" minX="-39" minY="6" maxX="0.0" maxY="-2"/>
                                         <state key="normal" image="Shop"/>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3vz-Ml-W8N">
@@ -52,6 +53,8 @@
                                             <constraint firstAttribute="width" constant="40" id="NnP-4h-NqR"/>
                                             <constraint firstAttribute="height" constant="40" id="xYD-tJ-ai4"/>
                                         </constraints>
+                                        <inset key="contentEdgeInsets" minX="0.0" minY="6" maxX="0.0" maxY="0.0"/>
+                                        <inset key="titleEdgeInsets" minX="-47" minY="-2" maxX="-6" maxY="2"/>
                                         <state key="normal" image="Heart"/>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yka-Vr-Ou7">
@@ -69,6 +72,8 @@
                                             <constraint firstAttribute="width" constant="40" id="0U8-IY-6JB"/>
                                             <constraint firstAttribute="height" constant="40" id="mej-PI-ISb"/>
                                         </constraints>
+                                        <inset key="contentEdgeInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                                        <inset key="titleEdgeInsets" minX="-42" minY="-3" maxX="-1" maxY="3"/>
                                         <state key="normal" image="Comment"/>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pyZ-C7-zHi">
@@ -86,6 +91,7 @@
                                             <constraint firstAttribute="height" constant="40" id="Hp8-hA-pQ5"/>
                                             <constraint firstAttribute="width" constant="40" id="XlM-0U-bkO"/>
                                         </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-1"/>
                                         <state key="normal" image="Share"/>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bGe-Ps-1PI">
